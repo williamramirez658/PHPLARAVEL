@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PersonaController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\BrandController;
-
+use App\Http\Controllers\ControllerCategories;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -52,3 +52,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Ruta Categories
+Route::get('/categories', [CategoriesController::class, 'show']);
