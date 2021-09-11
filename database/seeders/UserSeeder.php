@@ -12,12 +12,12 @@ class UserSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+     public function run()
     {
         User::create([
 
             "name" => 'SENA',
-            "email" => 'ncflechas@misena.edu.co',
+            "email" => 'wgramirez68@misena.edu.co',
             "password" => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
 
         ]);
