@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\CategoryController;
+use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\InvoiceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,3 +55,9 @@ Route::get('/categories', [CategoryController::class, 'show']);
 Route::get('/category/form/{id?}', [CategoryController::class, 'form'])->name('category.form');
 Route::post('/category/save', [CategoryController::class, 'save'])->name('category.save');
 Route::get('/category/delete/{id}', [CategoryController::class, 'delete'])->name('category.delete');
+
+//Invoice
+Route::get('/invoices',[InvoiceController::class , 'show']);
+Route::get('/invoice/form',[InvoiceController::class , 'form'])->name('invoice.form');
+
+
